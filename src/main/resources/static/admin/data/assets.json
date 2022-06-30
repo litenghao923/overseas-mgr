@@ -1,0 +1,51 @@
+{
+  "code": 0,
+  "count": 9,
+  "data": [
+    {
+      "date": "2022-04-22",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-21",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-20",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-19",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-18",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-17",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-16",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-15",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    },
+    {
+      "date": "2022-04-14",
+      "recharge_diamond": 10000,
+      "consume_gold": 10000
+    }
+  ]
+}

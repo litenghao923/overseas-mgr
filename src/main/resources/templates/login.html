@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <!-- 样 式 文 件 -->
+    <link rel="stylesheet" href="../static/component/pear/css/pear.css"/>
+    <link rel="stylesheet" href="../static/css/other/login.css"/>
+</head>
+<!-- 代 码 结 构 -->
+<body background="../static/img/background.svg" style="background-size: cover;">
+<form class="layui-form" action="javascript:void(0);">
+    <div class="layui-form-item">
+        <img class="logo" src="../static/img/logo.png"/>
+        <div class="title">币coin海外版</div>
+        <div class="desc">
+            运营管理后台
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <input placeholder="请输入用户名" lay-verify="required" hover class="layui-input" id="userName"/>
+    </div>
+    <div class="layui-form-item">
+        <input placeholder="请输入密码" lay-verify="required" hover class="layui-input" id="password"/>
+    </div>
+    <div class="layui-form-item">
+        <button type="button" class="pear-btn pear-btn-success login" lay-submit lay-filter="login" id="login_btn">
+            登 入
+        </button>
+    </div>
+</form>
+<!-- 资 源 引 入 -->
+<script src="../static/js/jquery-3.4.1.min.js"></script>
+<script src="../static/component/layui/layui.js"></script>
+<script>
+
+    $("#login_btn").on("click", function () {
+        var userName = $("#userName").val().trim();
+        var password = $("#password").val().trim();
+        if (userName == "moma" && password == "123456") {
+            window.location.href = "/index";
+        } else {
+            layer.msg("用户名或密码错误", {
+                icon: 3,
+                time: 1000
+            });
+        }
+
+
+        // $.ajax({
+        //     url: "http://47.109.24.64:8080/user/login",
+        //     type: "post",
+        //     data: JSON.stringify({
+        //         username: userName,
+        //         password: password
+        //     }),
+        //     beforeSend: function (request) {
+        //         request.setRequestHeader("Content-Type", "application/json");
+        //     },
+        //     success: function (res) {
+        //         if (res.code === 0) {
+        //             token = res.data;
+        //             window.localStorage.setItem("token", res.data);
+        //             window.location.href = "/index";
+        //         } else {
+        //             layer.msg("密码错误", {
+        //                 icon: 3,
+        //                 time: 1000
+        //             });
+        //         }
+        //
+        //     }
+        //
+        // })
+    })
+</script>
+</body>
+</html>

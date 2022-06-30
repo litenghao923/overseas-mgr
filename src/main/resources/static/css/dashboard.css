@@ -1,0 +1,173 @@
+#dashboard_block .dash_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #28333E;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.red_font {
+    color: #D9001B;
+}
+
+.green_font {
+    color: #26D4B9;
+}
+
+#dashboard_block .top-panel-tips {
+    padding: 0;
+    line-height: 22px;
+}
+
+.chart_tab {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.chart_tab > div button {
+    border: 1px solid #9F9F9F;
+    color: #9F9F9F;
+    border-radius: 10px;
+    width: 100px;
+    height: 28px;
+    background-color: #FFFFFF;
+}
+
+.chart_tab > div .active {
+    border: 1px solid #36b368;
+    background-color: #36b368;
+    color: #FFFFFF;
+}
+
+.chart_total_data {
+    display: flex;
+    padding-left: 5%;
+    padding-top: 20px;
+    color: #9F9F9F;
+    font-size: 16px;
+    align-items: center;
+}
+
+.chart_total_data .chart_date {
+    margin-right: 20px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#col2-block .top-panel {
+    padding: 20px;
+}
+
+#col2-block .card-top h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+#col2-block .card-top p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #9F9F9F;
+    margin-top: 10px;
+}
+
+#col2-block .card-pro {
+    padding-top: 20px;
+}
+
+#col2-block .card-pro .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#col2-block .card-pro .item > div:nth-child(1) {
+    width: 15%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+#col2-block .card-pro .item > div:nth-child(2) {
+    width: 70%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+#col2-block .card-pro .item > div:nth-child(3) {
+    width: 15%;
+    text-align: right;
+    color: #9F9F9F;
+}
+
+.trans_tab {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trans_tab .pear-btn {
+    height: 28px;
+    line-height: 28px;
+}
+
+.trans_tab .trans_target_btn button {
+    border: 1px solid #9F9F9F;
+    color: #9F9F9F;
+    border-radius: 10px;
+    width: 100px;
+    height: 28px;
+    background-color: #FFFFFF;
+}
+
+.trans_tab .trans_target_btn .active {
+    border: 1px solid #36b368;
+    background-color: #36b368;
+    color: #FFFFFF;
+}
+
+.chart_date .layui-input-inline input {
+    height: 28px;
+    font-size: 14px;
+}
+
+#source_title_btn {
+    display: flex;
+}
+
+#visitSourceType {
+    margin-left: 30px;
+}
+
+#visitSourceType button {
+    border: 1px solid #9F9F9F;
+    color: #9F9F9F;
+    border-radius: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#visitSourceType .active {
+    border: 1px solid #36b368;
+    background-color: #36b368;
+    color: #FFFFFF;
+}
+
+#trans_chart {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.noChart {
+    text-align: center;
+    padding: 30px;
+    color: #9F9F9F;
+}

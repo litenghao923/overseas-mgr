@@ -1,0 +1,14 @@
+server:
+  port: 8890
+spring:
+  #freemarker
+  freemarker:
+    check-template-location: true
+    template-loader-path: classpath:/templates/
+    cache: false
+    charset: UTF-8
+    content-type: text/html
+    expose-session-attributes: false
+    expose-request-attributes: false
+    request-context-attribute: request
+    suffix: .html
