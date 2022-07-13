@@ -29,6 +29,7 @@
 <script src="../../static/component/pear/pear.js"></script>
 <script src="../../static/app.js"></script>
 <script>
+
     layui.use(['table', 'form', 'jquery', 'common'], function () {
         let table = layui.table;
         let form = layui.form;
@@ -39,40 +40,46 @@
                 type: 'checkbox'
             },
                 {
-                    title: '币种',
+                    title: 'ID',
                     field: 'id',
                     align: 'center',
                     width: "5%"
                 },
                 {
                     title: '交易所',
-                    field: 'username',
+                    field: 'exName',
                     align: 'center',
                     width: "10%"
                 },
                 {
-                    title: '角色',
-                    field: 'roleName',
+                    title: '展示名称',
+                    field: 'sName',
                     align: 'center',
                     width: "15%"
                 },
                 {
-                    title: '简介',
-                    field: 'remark',
+                    title: '排序序号',
+                    field: 'sort',
                     align: 'center',
                     width: "15%"
                 },
                 {
-                    title: '最后登录IP',
-                    field: 'lastLoginIp',
+                    title: '图标',
+                    field: 'img',
                     align: 'center',
                     width: "15%"
                 },
                 {
-                    title: '状态',
-                    field: 'useSign',
+                    title: '是否展示',
+                    field: 'showStatus',
                     align: 'center',
                     templet: '#user-status'
+                },
+                {
+                    title: '更新时间',
+                    field: 'uTime',
+                    align: 'center',
+                    width: "15%"
                 },
                 {
                     title: '操作',
@@ -85,11 +92,11 @@
 
         table.render({
             elem: '#user-table',
-            url: host + "user/page",
+            url: "http://test.grandtrader.info:8080/mc/dataManage/getExchangeList",
             headers: {
-                token: token
+                Authorization: localStorage.getItem("Authorization")
             },
-            page: true,
+            page: false,
             cols: cols,
             skin: 'line',
             defaultToolbar: [{
